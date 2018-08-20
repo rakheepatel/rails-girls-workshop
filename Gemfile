@@ -7,6 +7,8 @@ ruby '2.3.4'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use carrierwave to make it easier to upload images	# Use carrierwave to make it easier to upload images
+gem 'carrierwave'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
