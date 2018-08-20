@@ -1,2 +1,4 @@
 tmp
 log/*
+public/uploads
+db/*.sqlite3
