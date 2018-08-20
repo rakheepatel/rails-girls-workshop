@@ -5,8 +5,14 @@ ruby '2.3.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  # When in a development environment use the SQLite database for Active Record
+  gem 'sqlite3'
+end
+group :production do
+  # When in production environment use PostgreSQL
+  gem 'pg'
+end
 # Use carrierwave to make it easier to upload images	# Use carrierwave to make it easier to upload images
 gem 'carrierwave'
 # Use Puma as the app server
